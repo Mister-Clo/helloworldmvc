@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class LireFile {
-	private static String FileName = new String("helloworld.txt");
+	private static String FileName = new String("yo.txt");
     private static LireFile instance = null;
     private String helloWorldMessage = null;
     private BufferedInputStream bis =null;
@@ -27,9 +27,9 @@ public class LireFile {
     private void readFile() {
     	try {
     		bis = new BufferedInputStream(new FileInputStream(new 
-    				File("helloworld.txt")));
+    				File("yo.txt")));
     		
-    		byte[] buf =new byte[8];
+    		byte[] buf =new byte[20];
     		while(bis.read(buf) != -1) {
     			for (byte bit:buf) {
     				System.out.print((char)bit);
