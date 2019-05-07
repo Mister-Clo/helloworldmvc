@@ -22,4 +22,11 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <modules>
+  	<module>helloworldmvc.view</module>
+  	<module>helloworldmvc.controller</module>
+  	<module>helloworldmvc.contract</module>
+  	<module>helloworldmvc.main</module>
+  	<module>helloworldmvc.model</module>
+  </modules>
 </project>
